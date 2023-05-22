@@ -71,13 +71,13 @@ Specifically, these steps utilizes Natural Language Processing (NLP) techniques 
 Finally, word2vec is used to processes the corpus data by converting each sublist into a list and appending a special token '<unk>' to indicate unknown words. It specifies the embedding size and the path to save the trained Word2Vec model. The Word2Vec model is trained on the processed corpus data using the specified parameters, and the trained model is saved to the specified file path. The code then loads the vocabulary index from a saved file and retrieves the embedding vectors for each word in the vocabulary. The code also demonstrates loading and processing additional data files, such as labels and bag-of-words (BoW) filtered vocabulary indices, by loading and printing their contents.
 
 
-## AdversarialVAE Model
+## Model AdversarialVAE 
 
 The AdversarialVAE model is a generative model that combines the principles of variational autoencoders and adversarial training. It consists of an encoder, decoder, and discriminator. The encoder encodes input text into a latent space, the decoder reconstructs the input text from the latent space, and the discriminator tries to distinguish between real and generated text. The model is trained using a combination of reconstruction loss, KL divergence, and adversarial loss.
 
 ## Results
 
-The results are best exemplified in the . The project will next undergo updates and iterations to the modelling steps as well as the addition of a UI to enable ease of use for users.
+The results are best exemplified in the "Presentation_YouTransfer.pdf", but while there were some shortcomings with the modelling, the project was promising overall. The project will next undergo updates and iterations to the modelling steps as well as the addition of a UI to enable ease of use for users.
 
 ## Contributing
 
