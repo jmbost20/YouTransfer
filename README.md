@@ -1,18 +1,18 @@
 # YouTransfer: YouTube Transcript Generation with AdversarialVAE
 
-This project utilizes Google Colab and Jupyter Notebook to pull transcripts from different YouTube videos and then applies Natural Language Processing (NLP) techniques to generate text using an AdversarialVAE (Variational Autoencoder) model.
+This project was developed in tandem by four students at the University of Wisconsin-Madison to contribute to the topic of text style transfer. The project utilizes Google Colab and Jupyter Notebook to pull transcripts from different YouTube videos and then applies Natural Language Processing (NLP) techniques to generate text using an AdversarialVAE (Variational Autoencoder) model. 
 
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Data Collection](#data-collection)
-- [Preprocessing](#preprocessing)
-- [AdversarialVAE Model](#adversarialvae-model)
-- [Results](#results)
+- [Development](#development)
+  - [Data Collection](#data-collection)
+  - [Preprocessing](#preprocessing)
+  - [AdversarialVAE Model](#adversarialvae-model)
+  - [Results](#results)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -20,14 +20,37 @@ YouTube Transcript Generation with AdversarialVAE is a project that combines the
 
 ## Packages
 
+This project can be run in Google Colab as it was developed, or it can be ran in a local environment as a .ipynb or converted to .py.
+
 To run this project, you need to have the following dependencies installed:
 
+- pandas
+- nltk
+- torch
 - Python 3.x
 - Jupyter Notebook
 - TensorFlow
 - PyTorch
 - Transformers
 
+## Usage
+
+To use with Google Colab: 
+
+Mount your Google Drive by running the code cell containing drive.mount('/content/drive'). This step allows access to the required files and storage for saving the processed data.
+
+Update the channels list variable with the names of the YouTube channels for which you want to clean and prepare the transcript data.
+
+Execute the cells in the notebook one by one. The notebook will perform the following tasks:
+
+1. Load the transcript data for the specified YouTube channels.
+2. Perform cleaning and tokenization on the transcript text.
+3. Format the transcript data into appropriate inputs for further processing. Save the formatted transcript data, vocabulary mappings, and labels to the specified locations in Google Drive.
+4. After executing the notebook, you will have the cleaned and formatted transcript data, vocabulary mappings, and labels saved in the specified locations on your Google Drive.
+
+# Development
+
+The next sections highlight the steps of development this project undertook
 
 ## Data Collection
 
@@ -35,7 +58,7 @@ The first step in this project is to collect transcripts from various YouTube vi
 
 ## Preprocessing
 
-Once the transcripts are collected, preprocessing is performed to clean the text data. Preprocessing steps may include removing special characters, lowercasing, tokenization, and removing stopwords. These steps help in preparing the data for the AdversarialVAE model.
+Once the transcripts are collected, preprocessing is performed to clean the text data. Preprocessing steps include removing special characters, lowercasing, tokenization, and removing stopwords. These steps help in preparing the data for the AdversarialVAE model.
 
 ## AdversarialVAE Model
 
@@ -43,7 +66,7 @@ The AdversarialVAE model is a generative model that combines the principles of v
 
 ## Results
 
-The results of the AdversarialVAE model can be evaluated by comparing the generated text with the original YouTube video transcripts. Evaluation metrics such as BLEU score, perplexity, or human evaluation can be employed to assess the quality and coherence of the generated text.
+The results are best exemplified in the . The project will next undergo updates and iterations to the modelling steps as well as the addition of a UI to enable ease of use for users.
 
 ## Contributing
 
