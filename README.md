@@ -1,6 +1,6 @@
 # YouTransfer: YouTube Transcript Generation with AdversarialVAE
 
-This project was developed in tandem by four students at the University of Wisconsin-Madison to contribute to the topic of text style transfer. The project utilizes Google Colab and Jupyter Notebook to pull transcripts from different YouTube videos and then applies Natural Language Processing (NLP) techniques to generate text using an AdversarialVAE (Variational Autoencoder) model. 
+This project was developed in tandem by four students at the University of Wisconsin-Madison to contribute to the topic of text style transfer. The project utilizes Google Colab and Jupyter Notebook to pull transcripts from different YouTube videos and then applies Natural Language Processing (NLP) techniques to generate text using an AdversarialVAE (Variational Autoencoder) model with the goal to generate desired text from any YouTuber.
 
 ## Table of Contents
 
